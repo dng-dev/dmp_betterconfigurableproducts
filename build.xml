@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="BCP" default="build" basedir=".">
+    <property name="phpunit" value="phpunit-3.7" />
+
+    <!-- preparing jumpstorm commands for reuse -->
+    <target name="magento">
+        <exec executable="jumpstorm">
+            <arg line="magento -c ${ini}" />
+        </exec>
+    </target>
+    <target name="extensions">
+        <exec executable="jumpstorm">
+            <arg line="extensions -c ${ini}" />
+        </exec>
+    </target>
+    
+     <target name="unittesting">
+        <exec executable="jumpstorm">
+            <arg line="unittesting -c ${ini}" />
+        </exec>
+    </target>
+    
+    <target name="plugins">
+        <exec executable="jumpstorm">
+            <arg line="plugins -c ${ini}" />
+        </exec>
+    </target>
+
+
+    <target name="phpunit">
+        <!--
+            path to UnitTests.php must match installPath from jumpstorm.ini,
+            relative to ${WORKSPACE}
+        -->
+        <exec failonerror="true" command='phpunit --stderr
+                       -c "${basedir}/build/phpunit.xml"' />
+    </target>
+
+    <target name="phpunit-report">
+        <exec failonerror="true" command='phpunit 
+					   -c "${basedir}/build/phpunit.xml"
+                       --log-junit "${basedir}/reports/unitreport.xml"
+                       --coverage-html "${basedir}/reports/coverage"
+                       --coverage-clover "${basedir}/reports/coverage/coverage.xml"'/>
+    </target>
+	
+
+	<target name="phpmd" description="php mess detector">
+        <exec command="phpmd ${basedir} xml codesize,design,naming,unusedcode
+              --exclude tests
+              --reportfile reports/pmd.xml" />
+    </target>
+
+    <target name="phpcpd" description="copy/paste detector">
+        <exec command="phpcpd --exclude reports/ --log-pmd reports/cpd.xml ${basedir}" />
+    </target>
+
+    <target name="phpcs" description="php code sniffer" >
+        <exec command="phpcs --standard=zend ${basedir}/app --report-file=reports/checkstyle.xml --report=checkstyle" />
+    </target>
+
+    <target name="magento_ce_19">
+        <antcall target="magento"><param name="ini" value="${basedir}/build/ce1901.jumpstorm.ini"/></antcall>
+        <antcall target="unittesting"><param name="ini" value="${basedir}/build/ce1901.jumpstorm.ini"/></antcall>
+        <antcall target="extensions"><param name="ini" value="${basedir}/build/ce1901.jumpstorm.ini"/></antcall>
+        <antcall target="plugins"><param name="ini" value="${basedir}/build/ce1901.jumpstorm.ini"/></antcall>
+	</target>
+
+	<target name="static-analysis">
+        <antcall target="phpmd" />
+        <antcall target="phpcpd" />
+        <antcall target="phpcs" />
+    </target>
+
+    <!-- entry point -->
+    <target name="build" depends="magento_ce_19, phpunit, phpunit-report, static-analysis" />
+    
+    <target name="make" depends="build">
+        <exec command="make" />
+    </target>
+    
+    <target name="create-package" depends="make">
+        <exec command = "php /opt/magento-tar-to-connect/magento-tar-to-connect.php build/packageconfig/config.php" /> 
+    </target>
+    
+</project>

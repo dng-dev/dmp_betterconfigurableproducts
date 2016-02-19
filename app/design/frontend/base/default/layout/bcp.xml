@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Der Modulprogrammierer - Magento App Factory AG
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the
+ * Der Modulprogrammierer - COMMERCIAL SOFTWARE LICENSE (v1.0) (DMCSL 1.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ *
+ *
+ * @category   DerModPro
+ * @package    DerModPro_BCP
+ * @copyright  Copyright (c) 2012 Der Modulprogrammierer - Magento App Factory AG
+ * @license    Der Modulprogrammierer - COMMERCIAL SOFTWARE LICENSE (v1.0) (DMCSL 1.0)
+ */
+-->
+<layout>
+    <PRODUCT_TYPE_configurable>
+	   <reference name="head">
+		  <action method="addJs">
+			 <script>dermodpro/bcp/configurable.js</script>
+		  </action>
+		  <action method="addItem">
+			 <type>skin_css</type>
+			 <name>dermodpro/bcp/css/bcp.css</name>
+		  </action>
+	   </reference>
+	   <reference name="content">
+		  <block type="bcp/catalog_product_view_type_configurable_bcp" template="dermodpro/bcp/catalog/product/view/type/configurable.phtml" name="bcp.js" as="bcp_js"/>
+	   </reference>
+	   <reference name="product.info">
+		  <!-- for default theme -->
+		  <action method="setTierPriceTemplate">
+			 <template>dermodpro/bcp/catalog/product/view/tierprices.phtml</template>
+		  </action>
+	   </reference>
+	   <reference name="product.tierprices">
+		  <!-- for blank theme -->
+		  <action method="setTemplate">
+			 <template>dermodpro/bcp/catalog/product/view/tierprices.phtml</template>
+		  </action>
+	   </reference>
+    </PRODUCT_TYPE_configurable>
+</layout>

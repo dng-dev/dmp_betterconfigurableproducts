@@ -1,0 +1,14 @@
+#
+# BCP modman file
+#
+app/code/community/DerModPro/BCP app/code/community/DerModPro/BCP
+app/etc/modules/DerModPro_BCP.xml app/etc/modules/DerModPro_BCP.xml
+app/design/adminhtml/default/default/template/bcp app/design/adminhtml/default/default/template/bcp
+app/design/frontend/base/default/layout/bcp.xml app/design/frontend/base/default/layout/bcp.xml
+app/design/frontend/base/default/layout/bcp.xml app/design/frontend/default/default/layout/bcp.xml
+app/design/frontend/base/default/template/dermodpro/bcp app/design/frontend/base/default/template/dermodpro/bcp
+app/design/frontend/base/default/template/dermodpro/bcp app/design/frontend/default/default/template/dermodpro/bcp
+skin/frontend/base/default/dermodpro/bcp skin/frontend/base/default/dermodpro/bcp
+skin/frontend/base/default/dermodpro/bcp skin/frontend/default/default/dermodpro/bcp
+js/dermodpro/bcp js/dermodpro/bcp
+app/locale/de_DE/DerModPro_BCP.csv app/locale/de_DE/DerModPro_BCP.csv

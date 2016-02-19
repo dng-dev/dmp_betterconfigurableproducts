@@ -1,0 +1,1060 @@
+%PDF-1.3
+%“Œ‹ž ReportLab Generated PDF document http://www.reportlab.com
+% 'BasicFonts': class PDFDictionary 
+1 0 obj
+% The standard fonts dictionary
+<< /F1 2 0 R
+ /F2 3 0 R
+ /F3 4 0 R >>
+endobj
+% 'F1': class PDFType1Font 
+2 0 obj
+% Font Helvetica
+<< /BaseFont /Helvetica
+ /Encoding /WinAnsiEncoding
+ /Name /F1
+ /Subtype /Type1
+ /Type /Font >>
+endobj
+% 'F2': class PDFType1Font 
+3 0 obj
+% Font Helvetica-Bold
+<< /BaseFont /Helvetica-Bold
+ /Encoding /WinAnsiEncoding
+ /Name /F2
+ /Subtype /Type1
+ /Type /Font >>
+endobj
+% 'F3': class PDFType1Font 
+4 0 obj
+% Font Helvetica-BoldOblique
+<< /BaseFont /Helvetica-BoldOblique
+ /Encoding /WinAnsiEncoding
+ /Name /F3
+ /Subtype /Type1
+ /Type /Font >>
+endobj
+% 'Page1': class PDFPage 
+5 0 obj
+% Page dictionary
+<< /Contents 10 0 R
+ /MediaBox [ 0
+ 0
+ 595.2756
+ 841.8898 ]
+ /Parent 9 0 R
+ /Resources << /Font 1 0 R
+ /ProcSet [ /PDF
+ /Text
+ /ImageB
+ /ImageC
+ /ImageI ] >>
+ /Rotate 0
+ /Trans <<  >>
+ /Type /Page >>
+endobj
+% 'Page2': class PDFPage 
+6 0 obj
+% Page dictionary
+<< /Contents 11 0 R
+ /MediaBox [ 0
+ 0
+ 595.2756
+ 841.8898 ]
+ /Parent 9 0 R
+ /Resources << /Font 1 0 R
+ /ProcSet [ /PDF
+ /Text
+ /ImageB
+ /ImageC
+ /ImageI ] >>
+ /Rotate 0
+ /Trans <<  >>
+ /Type /Page >>
+endobj
+% 'R7': class PDFCatalog 
+7 0 obj
+% Document Root
+<< /Outlines 12 0 R
+ /PageLabels 13 0 R
+ /PageMode /UseNone
+ /Pages 9 0 R
+ /Type /Catalog >>
+endobj
+% 'R8': class PDFInfo 
+8 0 obj
+<< /Author ()
+ /CreationDate (D:20120111105125-01'00')
+ /Keywords ()
+ /Producer (ReportLab http://www.reportlab.com)
+ /Subject (\(unspecified\))
+ /Title (BCP Features) >>
+endobj
+% 'R9': class PDFPages 
+9 0 obj
+% page tree
+<< /Count 2
+ /Kids [ 5 0 R
+ 6 0 R ]
+ /Type /Pages >>
+endobj
+% 'R10': class PDFStream 
+10 0 obj
+% page stream
+<< /Length 2298 >>
+stream
+1 0 0 1 0 0 cm BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 741.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 9.64 Tm /F2 20 Tf 24 TL 169.3749 0 Td (BCP Features) Tj T* -169.3749 0 Td ET
+Q
+Q
+q
+1 0 0 1 62.69291 719.0236 cm
+q
+BT 1 0 0 1 0 4.82 Tm 12 TL /F1 10 Tf 0 0 0 rg (Feature: BCP) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 713.0236 cm
+Q
+q
+1 0 0 1 62.69291 611.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 96 cm
+Q
+q
+1 0 0 1 20 69 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 15 cm
+q
+BT 1 0 0 1 0 4.82 Tm 11.91937 0 Td 12 TL /F3 10 Tf 0 0 0 rg (Mit dem Ziel) Tj /F2 10 Tf (:) Tj T* -11.91937 0 Td ET
+Q
+Q
+q
+1 0 0 1 91.03937 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 16.82 Tm /F1 10 Tf 12 TL .958799 Tw (die Eigenschaften eines Einfachen Produktes auf Konfigurierbare Produkte zu) Tj T* 0 Tw (\374bertragen) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 54 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+BT 1 0 0 1 0 4.82 Tm 55.80937 0 Td 12 TL /F3 10 Tf 0 0 0 rg (als) Tj /F2 10 Tf (:) Tj T* -55.80937 0 Td ET
+Q
+Q
+q
+1 0 0 1 91.03937 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4.82 Tm /F1 10 Tf 12 TL (H\344ndler) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 27 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 15 cm
+q
+BT 1 0 0 1 0 4.82 Tm 2.46937 0 Td 12 TL /F3 10 Tf 0 0 0 rg (vorausgesetzt) Tj /F2 10 Tf (:) Tj T* -2.46937 0 Td ET
+Q
+Q
+q
+1 0 0 1 91.03937 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 16.82 Tm /F1 10 Tf 12 TL 1.335771 Tw (Einfache Produkte existieren und einem Konfigurierbaren Produkt zugeordnet) Tj T* 0 Tw (sind) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 0 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+BT 1 0 0 1 0 16.82 Tm 17.46937 0 Td 12 TL /F3 10 Tf 0 0 0 rg (m\366chte ich,) Tj T* 29.45 0 Td (dass) Tj /F2 10 Tf (:) Tj T* -46.91937 0 Td ET
+Q
+Q
+q
+1 0 0 1 91.03937 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 16.82 Tm /F1 10 Tf 12 TL .545049 Tw (ausschlie\337lich die Einfachen Produkte \374ber Preise, Bilder und Beschreibungen) Tj T* 0 Tw (im Frontend entscheiden.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 611.0236 cm
+Q
+q
+1 0 0 1 62.69291 605.0236 cm
+Q
+q
+1 0 0 1 62.69291 593.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4.82 Tm /F1 10 Tf 12 TL ( ) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 593.0236 cm
+Q
+q
+1 0 0 1 62.69291 587.0236 cm
+Q
+ 
+endstream
+
+endobj
+% 'R11': class PDFStream 
+11 0 obj
+% page stream
+<< /Length 11603 >>
+stream
+1 0 0 1 0 0 cm BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 180.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 579 cm
+Q
+q
+1 0 0 1 20 579 cm
+Q
+q
+1 0 0 1 20 567 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4.82 Tm /F1 10 Tf 12 TL 5.66 0 Td (1.) Tj T* -5.66 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4.82 Tm /F1 10 Tf 12 TL (Szenario:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 567 cm
+Q
+q
+1 0 0 1 20 561 cm
+Q
+q
+1 0 0 1 20 498 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 57 cm
+Q
+q
+1 0 0 1 20 30 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 15 cm
+q
+BT 1 0 0 1 0 4.82 Tm 1.35937 0 Td 12 TL /F3 10 Tf 0 0 0 rg (Vorausgesetzt) Tj /F2 10 Tf (:) Tj T* -1.35937 0 Td ET
+Q
+Q
+q
+1 0 0 1 91.03937 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 16.82 Tm /F1 10 Tf 12 TL 3.878799 Tw (die Einfachen Produkte haben andere Bilder als das Konfigurierbare) Tj T* 0 Tw (Produkt:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 15 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+BT 1 0 0 1 0 4.82 Tm 25.25937 0 Td 12 TL /F3 10 Tf 0 0 0 rg (Wenn ich) Tj /F2 10 Tf (:) Tj T* -25.25937 0 Td ET
+Q
+Q
+q
+1 0 0 1 91.03937 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4.82 Tm /F1 10 Tf 12 TL (die Produktliste anzeigen lasse,) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 0 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+BT 1 0 0 1 0 4.82 Tm 44.70937 0 Td 12 TL /F3 10 Tf 0 0 0 rg (Dann) Tj /F2 10 Tf (:) Tj T* -44.70937 0 Td ET
+Q
+Q
+q
+1 0 0 1 91.03937 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4.82 Tm /F1 10 Tf 12 TL (soll das Produktbild des Konfigurierbaren Produktes angezeigt werden.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 498 cm
+Q
+q
+1 0 0 1 20 492 cm
+Q
+q
+1 0 0 1 20 492 cm
+Q
+q
+1 0 0 1 20 480 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4.82 Tm /F1 10 Tf 12 TL 5.66 0 Td (2.) Tj T* -5.66 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4.82 Tm /F1 10 Tf 12 TL (Szenario:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 480 cm
+Q
+q
+1 0 0 1 20 474 cm
+Q
+q
+1 0 0 1 20 411 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 57 cm
+Q
+q
+1 0 0 1 20 30 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 15 cm
+q
+BT 1 0 0 1 0 4.82 Tm 1.35937 0 Td 12 TL /F3 10 Tf 0 0 0 rg (Vorausgesetzt) Tj /F2 10 Tf (:) Tj T* -1.35937 0 Td ET
+Q
+Q
+q
+1 0 0 1 91.03937 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 16.82 Tm /F1 10 Tf 12 TL 3.878799 Tw (die Einfachen Produkte haben andere Bilder als das Konfigurierbare) Tj T* 0 Tw (Produkt:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 15 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+BT 1 0 0 1 0 4.82 Tm 25.25937 0 Td 12 TL /F3 10 Tf 0 0 0 rg (Wenn ich) Tj /F2 10 Tf (:) Tj T* -25.25937 0 Td ET
+Q
+Q
+q
+1 0 0 1 91.03937 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4.82 Tm /F1 10 Tf 12 TL (auf der Produktdetailseite Optionen eines Einfachen Produktes ausw\344hle) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 0 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+BT 1 0 0 1 0 4.82 Tm 44.70937 0 Td 12 TL /F3 10 Tf 0 0 0 rg (Dann) Tj /F2 10 Tf (:) Tj T* -44.70937 0 Td ET
+Q
+Q
+q
+1 0 0 1 91.03937 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4.82 Tm /F1 10 Tf 12 TL (soll das Produktbild des Einfachen Produktes angezeigt werden.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 411 cm
+Q
+q
+1 0 0 1 20 405 cm
+Q
+q
+1 0 0 1 20 405 cm
+Q
+q
+1 0 0 1 20 393 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4.82 Tm /F1 10 Tf 12 TL 5.66 0 Td (3.) Tj T* -5.66 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4.82 Tm /F1 10 Tf 12 TL (Szenario:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 393 cm
+Q
+q
+1 0 0 1 20 387 cm
+Q
+q
+1 0 0 1 20 324 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 57 cm
+Q
+q
+1 0 0 1 20 42 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+BT 1 0 0 1 0 4.82 Tm 1.35937 0 Td 12 TL /F3 10 Tf 0 0 0 rg (Vorausgesetzt) Tj /F2 10 Tf (:) Tj T* -1.35937 0 Td ET
+Q
+Q
+q
+1 0 0 1 91.03937 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4.82 Tm /F1 10 Tf 12 TL (die Einfachen Produkte haben unterschiedliche Bilder:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 27 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+BT 1 0 0 1 0 4.82 Tm 25.25937 0 Td 12 TL /F3 10 Tf 0 0 0 rg (Wenn ich) Tj /F2 10 Tf (:) Tj T* -25.25937 0 Td ET
+Q
+Q
+q
+1 0 0 1 91.03937 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4.82 Tm /F1 10 Tf 12 TL (auf der Produktdetailseite Optionen eines Einfachen Produktes ausw\344hle) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 0 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 15 cm
+q
+BT 1 0 0 1 0 4.82 Tm 44.70937 0 Td 12 TL /F3 10 Tf 0 0 0 rg (Dann) Tj /F2 10 Tf (:) Tj T* -44.70937 0 Td ET
+Q
+Q
+q
+1 0 0 1 91.03937 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 16.82 Tm /F1 10 Tf 12 TL 3.881299 Tw (soll das Produktbild bzw. die Produktbilder des Einfachen Produktes) Tj T* 0 Tw (angezeigt werden.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 324 cm
+Q
+q
+1 0 0 1 20 318 cm
+Q
+q
+1 0 0 1 20 318 cm
+Q
+q
+1 0 0 1 20 306 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4.82 Tm /F1 10 Tf 12 TL 5.66 0 Td (4.) Tj T* -5.66 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4.82 Tm /F1 10 Tf 12 TL (Szenario:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 306 cm
+Q
+q
+1 0 0 1 20 300 cm
+Q
+q
+1 0 0 1 20 249 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 45 cm
+Q
+q
+1 0 0 1 20 30 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+BT 1 0 0 1 0 4.82 Tm 1.35937 0 Td 12 TL /F3 10 Tf 0 0 0 rg (Vorausgesetzt) Tj /F2 10 Tf (:) Tj T* -1.35937 0 Td ET
+Q
+Q
+q
+1 0 0 1 91.03937 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4.82 Tm /F1 10 Tf 12 TL (die Einfachen Produkte haben verschiedene Preise:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 15 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+BT 1 0 0 1 0 4.82 Tm 25.25937 0 Td 12 TL /F3 10 Tf 0 0 0 rg (Wenn ich) Tj /F2 10 Tf (:) Tj T* -25.25937 0 Td ET
+Q
+Q
+q
+1 0 0 1 91.03937 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4.82 Tm /F1 10 Tf 12 TL (auf der Produktdetailseite Optionen eines Einfachen Produktes ausw\344hle) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 0 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+BT 1 0 0 1 0 4.82 Tm 44.70937 0 Td 12 TL /F3 10 Tf 0 0 0 rg (Dann) Tj /F2 10 Tf (:) Tj T* -44.70937 0 Td ET
+Q
+Q
+q
+1 0 0 1 91.03937 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4.82 Tm /F1 10 Tf 12 TL (soll der Preis des Einfachen Produktes angezeigt werden.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 249 cm
+Q
+q
+1 0 0 1 20 243 cm
+Q
+q
+1 0 0 1 20 243 cm
+Q
+q
+1 0 0 1 20 231 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4.82 Tm /F1 10 Tf 12 TL 5.66 0 Td (5.) Tj T* -5.66 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4.82 Tm /F1 10 Tf 12 TL (Szenario:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 231 cm
+Q
+q
+1 0 0 1 20 225 cm
+Q
+q
+1 0 0 1 20 174 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 45 cm
+Q
+q
+1 0 0 1 20 30 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+BT 1 0 0 1 0 4.82 Tm 1.35937 0 Td 12 TL /F3 10 Tf 0 0 0 rg (Vorausgesetzt) Tj /F2 10 Tf (:) Tj T* -1.35937 0 Td ET
+Q
+Q
+q
+1 0 0 1 91.03937 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4.82 Tm /F1 10 Tf 12 TL (die Einfachen Produkte haben verschiedene Beschreibungen:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 15 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+BT 1 0 0 1 0 4.82 Tm 25.25937 0 Td 12 TL /F3 10 Tf 0 0 0 rg (Wenn ich) Tj /F2 10 Tf (:) Tj T* -25.25937 0 Td ET
+Q
+Q
+q
+1 0 0 1 91.03937 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4.82 Tm /F1 10 Tf 12 TL (auf der Produktdetailseite Optionen eines Einfachen Produktes ausw\344hle) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 0 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+BT 1 0 0 1 0 4.82 Tm 44.70937 0 Td 12 TL /F3 10 Tf 0 0 0 rg (Dann) Tj /F2 10 Tf (:) Tj T* -44.70937 0 Td ET
+Q
+Q
+q
+1 0 0 1 91.03937 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4.82 Tm /F1 10 Tf 12 TL (soll die Beschreibung des Einfachen Produktes angezeigt werden.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 174 cm
+Q
+q
+1 0 0 1 20 168 cm
+Q
+q
+1 0 0 1 20 168 cm
+Q
+q
+1 0 0 1 20 156 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4.82 Tm /F1 10 Tf 12 TL 5.66 0 Td (6.) Tj T* -5.66 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4.82 Tm /F1 10 Tf 12 TL (Szenario:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 156 cm
+Q
+q
+1 0 0 1 20 150 cm
+Q
+q
+1 0 0 1 20 99 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 45 cm
+Q
+q
+1 0 0 1 20 30 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+BT 1 0 0 1 0 4.82 Tm 1.35937 0 Td 12 TL /F3 10 Tf 0 0 0 rg (Vorausgesetzt) Tj /F2 10 Tf (:) Tj T* -1.35937 0 Td ET
+Q
+Q
+q
+1 0 0 1 91.03937 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4.82 Tm /F1 10 Tf 12 TL (die Einfachen Produkte haben verschiedene Eigenschaften:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 15 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+BT 1 0 0 1 0 4.82 Tm 25.25937 0 Td 12 TL /F3 10 Tf 0 0 0 rg (Wenn ich) Tj /F2 10 Tf (:) Tj T* -25.25937 0 Td ET
+Q
+Q
+q
+1 0 0 1 91.03937 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4.82 Tm /F1 10 Tf 12 TL (auf der Produktdetailseite Optionen eines Einfachen Produktes ausw\344hle) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 0 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+BT 1 0 0 1 0 4.82 Tm 44.70937 0 Td 12 TL /F3 10 Tf 0 0 0 rg (Dann) Tj /F2 10 Tf (:) Tj T* -44.70937 0 Td ET
+Q
+Q
+q
+1 0 0 1 91.03937 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4.82 Tm /F1 10 Tf 12 TL (sollen die Eigenschaften des Einfachen Produktes angezeigt werden.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 99 cm
+Q
+q
+1 0 0 1 20 93 cm
+Q
+q
+1 0 0 1 20 93 cm
+Q
+q
+1 0 0 1 20 81 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4.82 Tm /F1 10 Tf 12 TL 5.66 0 Td (7.) Tj T* -5.66 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4.82 Tm /F1 10 Tf 12 TL (Szenario:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 81 cm
+Q
+q
+1 0 0 1 20 75 cm
+Q
+q
+1 0 0 1 20 0 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 69 cm
+Q
+q
+1 0 0 1 20 42 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 15 cm
+q
+BT 1 0 0 1 0 4.82 Tm 1.35937 0 Td 12 TL /F3 10 Tf 0 0 0 rg (Vorausgesetzt) Tj /F2 10 Tf (:) Tj T* -1.35937 0 Td ET
+Q
+Q
+q
+1 0 0 1 91.03937 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 16.82 Tm /F1 10 Tf 12 TL 4.674342 Tw (ein Konfigurierbares Produkt wurde mit dem zugeh\366rigen Einfachen) Tj T* 0 Tw (Produkt in den Warenkorb gelegt:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 27 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+BT 1 0 0 1 0 4.82 Tm 25.25937 0 Td 12 TL /F3 10 Tf 0 0 0 rg (Wenn ich) Tj /F2 10 Tf (:) Tj T* -25.25937 0 Td ET
+Q
+Q
+q
+1 0 0 1 91.03937 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4.82 Tm /F1 10 Tf 12 TL (den Link zum Produkt im Warenkorb anklicke) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 0 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 15 cm
+q
+BT 1 0 0 1 0 4.82 Tm 44.70937 0 Td 12 TL /F3 10 Tf 0 0 0 rg (Dann) Tj /F2 10 Tf (:) Tj T* -44.70937 0 Td ET
+Q
+Q
+q
+1 0 0 1 91.03937 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 16.82 Tm /F1 10 Tf 12 TL 9.898399 Tw (soll die Produktdetailseite mit den vorausgew\344hlten Optionen,) Tj T* 0 Tw (Beschreibungen und Bildern des Einfachen Produktes geladen werden.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 0 cm
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 180.0236 cm
+Q
+ 
+endstream
+
+endobj
+% 'R12': class PDFOutlines 
+12 0 obj
+<< /Count 0
+ /Type /Outlines >>
+endobj
+% 'R13': class PDFPageLabels 
+13 0 obj
+% Document Root
+<< /Nums [ 0
+ 14 0 R
+ 1
+ 15 0 R ] >>
+endobj
+% 'R14': class PDFPageLabel 
+14 0 obj
+% None
+<< /S /D
+ /St 1 >>
+endobj
+% 'R15': class PDFPageLabel 
+15 0 obj
+% None
+<< /S /D
+ /St 2 >>
+endobj
+xref
+0 16
+0000000000 65535 f
+0000000113 00000 n
+0000000233 00000 n
+0000000398 00000 n
+0000000573 00000 n
+0000000760 00000 n
+0000001038 00000 n
+0000001316 00000 n
+0000001472 00000 n
+0000001691 00000 n
+0000001805 00000 n
+0000004204 00000 n
+0000015911 00000 n
+0000015994 00000 n
+0000016100 00000 n
+0000016177 00000 n
+trailer
+<< /ID 
+ % ReportLab generated PDF document -- digest (http://www.reportlab.com) 
+ [(\370\032tf\340\256\255\031\012<\024\342\272\333\345\361) (\370\032tf\340\256\255\031\012<\024\342\272\333\345\361)] 
+
+ /Info 8 0 R
+ /Root 7 0 R
+ /Size 16 >>
+startxref
+16224
+%%EOF

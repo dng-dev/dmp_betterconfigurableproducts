@@ -1,0 +1,40 @@
+/**
+ * Der Modulprogrammierer - Magento App Factory AG
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the
+ * Der Modulprogrammierer - COMMERCIAL SOFTWARE LICENSE (v1.0) (DMCSL 1.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ *
+ *
+ * @category   DerModPro
+ * @package    DerModPro_BCP
+ * @copyright  Copyright (c) 2012 Der Modulprogrammierer - Magento App Factory AG
+ * @license    Der Modulprogrammierer - COMMERCIAL SOFTWARE LICENSE (v1.0) (DMCSL 1.0)
+ */
+
+#bcp-spinner {
+	width:250px;
+	height: 100px;
+	position: fixed;
+	top: 30%;
+	left: 50%;
+	text-align:center;
+	padding:10px;
+	border: 5px solid #F6F6F6;
+	background-color: #F6F5F4;
+	margin-left: -50px;
+	margin-top: -50px;
+	z-index:2;
+	overflow: auto;
+}
+#bcp-spinner img {
+	margin-top: 20px;
+}
+
+/*
+ * Add this so the product options price box doesn't loos it's bold formatting.
+ * Problem: the simple products don't have the custom product options the configurable product has
+ */
+.product-options-bottom .price-box .regular-price { font-weight: bold; font-size:13px; }

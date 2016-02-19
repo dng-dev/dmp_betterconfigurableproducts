@@ -1,0 +1,57 @@
+<?php
+/**
+ * Der Modulprogrammierer - Magento App Factory AG
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the
+ * Der Modulprogrammierer - COMMERCIAL SOFTWARE LICENSE (v1.0) (DMCSL 1.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ *
+ *
+ * @category   DerModPro
+ * @package    DerModPro_BCP
+ * @copyright  Copyright (c) 2012 Der Modulprogrammierer - Magento App Factory AG
+ * @license    Der Modulprogrammierer - COMMERCIAL SOFTWARE LICENSE (v1.0) (DMCSL 1.0)
+ */
+?>
+<div class="content-header">
+	<table cellspacing="0">
+		<tr>
+			<td><h3 class=""><?php echo Mage::helper('bcp')->__('Set Default Simple Products for all Configurable Products') ?></h3></td>
+		</tr>
+	</table>
+</div>
+<div class="content-body">
+	<?php echo $this->__('Setting or unseting the default simple product will also clear the %s cache.', strtoupper($this->getCacheTag())) ?>
+	<table style="border-spacing: 10px;">
+		<tbody>
+			<tr>
+				<td class="form-buttons"><?php echo $this->getChildHtml('setCheapestAsDefault'); ?></td>
+				<?php $state = $this->getStatus('setCheapest'); ?>
+				<td style="width:50%; text-align:right;"><?php if ($state > 0): ?>
+					<?php echo $this->__('The process wass interrupted, please repeat it to continue.') ?>
+					<?php echo Mage::helper('bcp')->__('(Status: %s/%s)', $state, $this->getConfigurableProductCount()) ?>
+				<?php endif; ?></td>
+			</tr>
+				<td class="form-buttons"><?php echo $this->getChildHtml('unsetDefault'); ?></td>
+				<?php $state = $this->getStatus('unsetDefault'); ?>
+				<td style="width:50%; text-align:right;"><?php if ($state > 0): ?>
+					<?php echo $this->__('The process wass interrupted, please repeat it to continue.') ?>
+					<?php echo Mage::helper('bcp')->__('(Status: %s/%s)', $state, $this->getConfigurableProductCount()) ?>
+				<?php endif; ?></td>
+			</tr>
+            </tr>
+                <td class="form-buttons">
+                    <?php echo $this->getChildHtml('migrateCheapestProduct'); ?><br />
+                    <?php echo $this->__('This process migrates the product values of attribute "bcp_default_product" (product_id-based) to attribute "bcp_default_product_sku" (sku-based).') ?>
+                </td>
+                <?php $state = $this->getStatus('migrateCheapestProduct'); ?>
+                <td style="width:50%; text-align:right;"><?php if ($state > 0): ?>
+                    <?php echo $this->__('The process wass interrupted, please repeat it to continue.') ?>
+                    <?php echo Mage::helper('bcp')->__('(Status: %s/%s)', $state, $this->getConfigurableProductCount()) ?>
+                <?php endif; ?></td>
+            </tr>
+		</tbody>
+	</table>
+</div>

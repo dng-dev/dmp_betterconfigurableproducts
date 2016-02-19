@@ -1,0 +1,60 @@
+<?php
+/**
+ * Der Modulprogrammierer - Magento App Factory AG
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the
+ * Der Modulprogrammierer - COMMERCIAL SOFTWARE LICENSE (v1.0) (DMCSL 1.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ *
+ *
+ * @category   DerModPro
+ * @package    DerModPro_BCP
+ * @copyright  Copyright (c) 2012 Der Modulprogrammierer - Magento App Factory AG
+ * @license    Der Modulprogrammierer - COMMERCIAL SOFTWARE LICENSE (v1.0) (DMCSL 1.0)
+ */
+?>
+
+<table cellspacing="0" class="switcher" width="100%" class="form-list">
+    <col width="220px" />
+    <col />
+    <thead>
+        <tr>
+            <th colspan="2">
+                <?php echo $this->escapeHtml($this->getFieldsetLabel()) ?>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><?php echo $this->__('Version'); ?></td>
+            <td><?php echo $this->getVersion(); ?></td>
+        </tr>
+        <tr>
+            <td><?php echo $this->__('Find more at'); ?></td>
+            <td><a href="http://www.magentoappfactory.com/supportpages/help/bcp.html">http://www.magentoappfactory.com/supportpages/help/bcp.html</a></td>
+        </tr>
+        <tr>
+            <td><?php echo $this->__('FAQ'); ?></td>
+            <td><a href="http://de.magentoappfactory.com/faq/category/16/bcp-%26-bcp-swatches.html">http://de.magentoappfactory.com/faq/category/16/bcp-&-bcp-swatches.html</a></td>
+        </tr>
+        <tr>
+            <td class="label"><?php echo $this->__('Need support? Contact us'); ?></td>
+            <?php
+                $mageVersion = Mage::getVersion();
+                if (is_callable('Mage::getEdition')) {
+                    $mageVersion = Mage::getEdition() . ' ' . $mageVersion;
+                }
+                $bodyInfo = array(
+                    '',
+                    '===',
+                    'Magento version:    '  . $mageVersion,
+                    'BCP app version: ' . $this->getVersion(),
+                    'Shop URI:           '  . Mage::getBaseUrl()
+                );
+            ?>
+            <td><a href="mailto:<?php echo Mage::helper('bcp/data')->getSupportMail(); ?>?body=<?php echo rawurlencode(implode("\n", $bodyInfo)) ?>"><?php echo Mage::helper('bcp/data')->getSupportMail() ?></a></td>
+        </tr>
+    </tbody>
+</table>

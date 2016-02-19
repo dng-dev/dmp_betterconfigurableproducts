@@ -1,0 +1,359 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Der Modulprogrammierer - Magento App Factory AG
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the
+ * Der Modulprogrammierer - COMMERCIAL SOFTWARE LICENSE (v1.0) (DMCSL 1.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ *
+ *
+ * @category   DerModPro
+ * @package    DerModPro_BCP
+ * @copyright  Copyright (c) 2012 Der Modulprogrammierer - Magento App Factory AG
+ * @license    Der Modulprogrammierer - COMMERCIAL SOFTWARE LICENSE (v1.0) (DMCSL 1.0)
+ */
+-->
+<config>
+    <tabs>
+        <dermodpro translate="label" module="bcp">
+            <label>Der Modulprogrammierer</label>
+            <sort_order>506</sort_order>
+        </dermodpro>
+    </tabs>
+    <sections>
+        <dermodpro_bcp translate="label" module="bcp">
+            <label>Better Configurable Products</label>
+            <sort_order>10</sort_order>
+            <tab>dermodpro</tab>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                 <support translate="label">
+                    <label>Information</label>
+                    <frontend_type>text</frontend_type>
+                    <frontend_model>bcp/adminhtml_system_config_notice</frontend_model>
+                    <sort_order>0</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                </support>
+                <bcp translate="label" module="bcp">
+                    <label>Better Configurable Product Settings</label>
+                    <comment><![CDATA[<a href="http://www.nr-apps.com/store/supportpages/help/bcp.html" target="_blank"><img style="border: none;" src="http://www.netresearch.de/fileadmin/user_upload/images/magento/bcp-help.gif" alt="BCP Help" title="BCP Help"/></a><br/><br/>]]>
+                    </comment>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <theme_selection translate="label" module="bcp">
+                            <label>Select the original theme your theme is based on</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>bcp/system_config_source_theme</source_model>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </theme_selection>
+                        <update_images translate="label,comment" module="bcp">
+                            <label>Update the display of the products media section</label>
+                            <comment>This setting may be overriden on a product level</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </update_images>
+                        <keep_configurable_media_gallery translate="label,comment" module="bcp">
+                            <label>Only update the main image</label>
+                            <comment>Keep the media gallery of the configurable product</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </keep_configurable_media_gallery>
+                        <update_short_desc translate="label,comment" module="bcp">
+                            <label>Update the display of the products short description</label>
+                            <comment>This setting may be overriden on a product level</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </update_short_desc>
+                        <update_collateral translate="label,comment" module="bcp">
+                            <label>Update the display of the products collateral data</label>
+                            <comment>This setting may be overriden on a product level</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </update_collateral>
+                        <keep_configurable_description translate="label" module="bcp">
+                            <label>Keep the long description of the configurable product</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </keep_configurable_description>
+                        <show_out_of_stock_products translate="label" module="bcp">
+                            <label>Show out of stock products</label>
+                            <comment>Show the product options for out of stock products in the Drop-Down on product detail page</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </show_out_of_stock_products>
+                        <dropdown_out_of_stock_grey_products translate="label" module="bcp">
+                            <label>Out of stock in Drop-Down selectable</label>
+                            <comment>If set to no, out of stock product options are grey in Drop-Down list and cannot be selected</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>65</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <show_out_of_stock_products>1</show_out_of_stock_products>
+                            </depends>
+                        </dropdown_out_of_stock_grey_products>
+                        <preload_simple_product_images translate="label" module="bcp">
+                            <label>Preload simple product images</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>70</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </preload_simple_product_images>
+                        <show_spinner translate="label" module="bcp">
+                            <label>Show spinner while ajax update is in progress</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>90</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </show_spinner>
+                        <update_price translate="label,comment" module="bcp">
+                            <label>Update the price block</label>
+                            <comment>This setting can not be overriden on a product level</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>100</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </update_price>
+                        <use_cheapest_simple_as_default translate="label,comment" module="bcp">
+                            <label>Use the cheapest child product as the default product</label>
+                            <comment>This setting may be overriden on a product level</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>110</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </use_cheapest_simple_as_default>
+                        <show_option_price translate="label" module="bcp">
+                            <label>Show the option price label</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>120</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </show_option_price>
+                        <show_option_price_if_same translate="label" module="bcp">
+                            <label>Show the option price label if it is the same as the currently displayed product price</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>130</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <show_option_price>1</show_option_price>
+                            </depends>
+                        </show_option_price_if_same>
+                        <unknown_price_label translate="label" module="bcp">
+                            <label>Unknown Price Option Label</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>140</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <show_option_price>1</show_option_price>
+                            </depends>
+                        </unknown_price_label>
+                        <price_prefix translate="label" module="bcp">
+                            <label>Option Label Price Prefix</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>150</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <show_option_price>1</show_option_price>
+                            </depends>
+                        </price_prefix>
+                        <price_sufix translate="label" module="bcp">
+                            <label>Option Label Price Suffix</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>160</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <show_option_price>1</show_option_price>
+                            </depends>
+                        </price_sufix>
+                        <out_of_stock_sufix translate="label" module="bcp">
+                            <label>Out of stock Drop-Down Suffix</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>170</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <show_out_of_stock_products>1</show_out_of_stock_products>
+                            </depends>
+                        </out_of_stock_sufix>
+                    </fields>
+                </bcp>
+                <bcp_advanced translate="label" module="bcp">
+                    <label>Advanced Settings</label>
+                    <sort_order>20</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <update_images_dom_xpath_advanced translate="label,comment" module="bcp">
+                            <label>Media Section DOM XPath</label>
+                            <comment>Used only if theme setting above does not work. See the README for more information.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </update_images_dom_xpath_advanced>
+                        <update_images_dom_csspath_advanced translate="label,comment" module="bcp">
+                            <label>Media Section CSS Selector</label>
+                            <comment>Used only if theme setting above does not work. See the README for more information.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </update_images_dom_csspath_advanced>
+                        <update_images_prepare_advanced translate="label,comment" module="bcp">
+                            <label>Media Section JavaScript callback to prepare update</label>
+                            <comment>Used only if theme setting above does not work. See the README for more information.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </update_images_prepare_advanced>
+                        <update_images_callback_advanced translate="label,comment" module="bcp">
+                            <label>Media Section JavaScript callback to reinitialize image functionality</label>
+                            <comment>Used only if theme setting above does not work. See the README for more information.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </update_images_callback_advanced>
+                        <update_price_dom_xpath_advanced translate="label,comment" module="bcp">
+                            <label>Price DOM XPath</label>
+                            <comment>Used only if theme setting above does not work. See the README for more information.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </update_price_dom_xpath_advanced>
+                        <update_price_dom_csspath_advanced translate="label,comment" module="bcp">
+                            <label>Price CSS Selector</label>
+                            <comment>Used only if theme setting above does not work. See the README for more information.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </update_price_dom_csspath_advanced>
+                        <update_short_desc_dom_xpath_advanced translate="label,comment" module="bcp">
+                            <label>Short Description DOM XPath</label>
+                            <comment>Used only if theme setting above does not work. See the README for more information.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>70</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </update_short_desc_dom_xpath_advanced>
+                        <update_short_desc_dom_csspath_advanced translate="label,comment" module="bcp">
+                            <label>Short Description CSS Selector</label>
+                            <comment>Used only if theme setting above does not work. See the README for more information.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>80</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </update_short_desc_dom_csspath_advanced>
+                        <update_collateral_dom_xpath_advanced translate="label,comment" module="bcp">
+                            <label>Collateral Info DOM XPath</label>
+                            <comment>Used only if theme setting above does not work. See the README for more information.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>90</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </update_collateral_dom_xpath_advanced>
+                        <update_collateral_dom_csspath_advanced translate="label,comment" module="bcp">
+                            <label>Collateral Info CSS Selector</label>
+                            <comment>Used only if theme setting above does not work. See the README for more information.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>100</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </update_collateral_dom_csspath_advanced>
+                        <ajax_response_cache_time translate="label,comment" module="bcp">
+                            <label>Ajax Response Server Side Cache Lifetime</label>
+                            <comment>Disabled if 0 or if HTML Bock Caching is disabled.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>110</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </ajax_response_cache_time>
+                        <html_page_cache_time translate="label,comment" module="bcp">
+                            <label>How long to cache the configurable product pages</label>
+                            <comment>Disabled if 0 or if HTML Bock Caching is disabled.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>120</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </html_page_cache_time>
+                    </fields>
+                </bcp_advanced>
+            </groups>
+        </dermodpro_bcp>
+    </sections>
+</config>

@@ -1,0 +1,37 @@
+<?php
+/**
+ * Der Modulprogrammierer - Magento App Factory AG
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the
+ * Der Modulprogrammierer - COMMERCIAL SOFTWARE LICENSE (v1.0) (DMCSL 1.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ *
+ *
+ * @category   DerModPro
+ * @package    DerModPro_BCP
+ * @copyright  Copyright (c) 2012 Der Modulprogrammierer - Magento App Factory AG
+ * @license    Der Modulprogrammierer - COMMERCIAL SOFTWARE LICENSE (v1.0) (DMCSL 1.0)
+ */
+?>
+<script type="text/javascript">
+//<![CDATA[
+if(typeof spConfig!='undefined' && spConfig.addBcpConfig) {
+	spConfig.addBcpConfig(<?php echo $this->getJsonConfig() ?>);
+
+	if (typeof spConfig.config.bcp.preloadImages!='undefined' && spConfig.config.bcp.preloadImages) {
+		var preloadCache = [];
+		var cacheImg;
+		$H(spConfig.config.bcp.spImages).each(function(pair) {
+			cacheImg = new Image(); cacheImg.src = pair[1];
+			preloadCache.push(cacheImg);
+		});
+	}
+}
+//]]>
+</script>
+<div id="bcp-spinner" style="display:none;">
+	<img src="<?php echo $this->getSkinUrl('dermodpro/bcp/images/spinner.gif') ?>" alt="<?php echo $this->__('Loading product update') ?>" title="<?php echo $this->__('Loading product update') ?>"/>
+</div>
+

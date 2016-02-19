@@ -1,0 +1,487 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Der Modulprogrammierer - Magento App Factory AG
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the
+ * Der Modulprogrammierer - COMMERCIAL SOFTWARE LICENSE (v1.0) (DMCSL 1.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ *
+ *
+ * @category   DerModPro
+ * @package    DerModPro_BCP
+ * @copyright  Copyright (c) 2012 Der Modulprogrammierer - Magento App Factory AG
+ * @license    Der Modulprogrammierer - COMMERCIAL SOFTWARE LICENSE (v1.0) (DMCSL 1.0)
+ */
+-->
+<config>
+    <modules>
+        <DerModPro_BCP>
+            <version>14.12.17</version>
+        </DerModPro_BCP>
+    </modules>
+    <global>
+        <models>
+            <bcp>
+                <class>DerModPro_BCP_Model</class>
+            </bcp>
+            <catalog>
+                <rewrite>
+                    <product_type_configurable>DerModPro_BCP_Model_Catalog_Product_Type_Configurable</product_type_configurable>
+                    <product_type_configurable_price>DerModPro_BCP_Model_Catalog_Product_Type_Configurable_Price</product_type_configurable_price>
+                    <product_type_price>DerModPro_BCP_Model_Catalog_Product_Type_Price</product_type_price>
+                </rewrite>
+            </catalog>
+            <catalog_resource_eav_mysql4>
+                <rewrite>
+                    <product_indexer_price_configurable>DerModPro_BCP_Model_Catalog_Resource_Eav_Mysql4_Product_Indexer_Price_Configurable</product_indexer_price_configurable>
+                    <product_type_configurable>DerModPro_BCP_Model_Catalog_Resource_Eav_Mysql4_Product_Type_Configurable</product_type_configurable>
+                </rewrite>
+            </catalog_resource_eav_mysql4>
+            <sales_mysql4>
+                <rewrite>
+                    <quote_item_collection>DerModPro_BCP_Model_Sales_Mysql4_Quote_Item_Collection</quote_item_collection>
+                </rewrite>
+            </sales_mysql4>
+        </models>
+        <blocks>
+            <bcp>
+                <class>DerModPro_BCP_Block</class>
+            </bcp>
+            <checkout>
+                <rewrite>
+                    <cart_item_renderer_configurable>DerModPro_BCP_Block_Checkout_Cart_Item_Renderer_Configurable</cart_item_renderer_configurable>
+                </rewrite>
+            </checkout>
+            <catalog>
+                <rewrite>
+                    <product_view_type_configurable>DerModPro_BCP_Block_Catalog_Product_View_Type_Configurable</product_view_type_configurable>
+                    <product_view_media>DerModPro_BCP_Block_Catalog_Product_View_Media</product_view_media>
+                </rewrite>
+            </catalog>
+            <tag>
+                <rewrite>
+                    <product_list>DerModPro_BCP_Block_Tag_Product_List</product_list>
+                </rewrite>
+            </tag>
+            <adminhtml>
+                <rewrite>
+                    <catalog_product_edit_tab_super_config_grid>DerModPro_BCP_Block_Adminhtml_Catalog_Product_Edit_Tab_Super_Config_Grid</catalog_product_edit_tab_super_config_grid>
+                </rewrite>
+            </adminhtml>
+        </blocks>
+        <helpers>
+            <bcp>
+                <class>DerModPro_BCP_Helper</class>
+            </bcp>
+        </helpers>
+        <resources>
+            <bcp_setup>
+                <setup>
+                    <module>DerModPro_BCP</module>
+                    <class>Mage_Catalog_Model_Resource_Eav_Mysql4_Setup</class>
+                </setup>
+                <connection>
+                    <use>default_setup</use>
+                </connection>
+            </bcp_setup>
+            <bcp_write>
+                <connection>
+                    <use>default_write</use>
+                </connection>
+            </bcp_write>
+            <bcp_read>
+                <connection>
+                    <use>default_read</use>
+                </connection>
+            </bcp_read>
+        </resources>
+        <bcp>
+            <update_handles>
+                <default/>
+                <catalog_product_view/>
+                <PRODUCT_TYPE_simple/>
+                <bcp_catalog_product_update/>
+            </update_handles>
+            <update_selector_list>
+                <price/>
+                <images/>
+                <short_desc/>
+                <collateral/>
+                <cpo/>
+            </update_selector_list>
+            <price_selector_list>
+                <standard_price>product-price-</standard_price>
+                <bundle>bundle-price-</bundle>
+                <incl_tax>price-including-tax-</incl_tax>
+                <excl_tax>price-excluding-tax-</excl_tax>
+                <old>old-price-</old>
+            </price_selector_list>
+        </bcp>
+        <events>
+            <catalog_product_get_final_price>
+                <observers>
+                    <bcp>
+                        <type>singleton</type>
+                        <class>bcp/observer</class>
+                        <method>catalogProductGetFinalPrice</method>
+                    </bcp>
+                </observers>
+            </catalog_product_get_final_price>
+             <sales_quote_item_set_product>
+                <observers>
+                    <bcp>
+                        <type>singleton</type>
+                        <class>bcp/observer</class>
+                        <method>salesQuoteItemSetProduct</method>
+                    </bcp>
+                </observers>
+            </sales_quote_item_set_product>
+        </events>
+    </global>
+    <frontend>
+        <events>
+            <bcp_catalog_product_view_update_before>
+                <observers>
+                    <bcp>
+                        <type>singleton</type>
+                        <class>bcp/observer</class>
+                        <method>bcpCatalogProductViewUpdateBefore</method>
+                    </bcp>
+                </observers>
+            </bcp_catalog_product_view_update_before>
+            <bcp_catalog_product_view_update>
+                <observers>
+                    <bcp>
+                        <type>singleton</type>
+                        <class>bcp/observer</class>
+                        <method>bcpCatalogProductViewUpdate</method>
+                    </bcp>
+                </observers>
+            </bcp_catalog_product_view_update>
+            <catalog_product_load_after>
+                <observers>
+                    <bcp>
+                        <type>singleton</type>
+                        <class>bcp/observer</class>
+                        <method>catalogProductLoadAfter</method>
+                    </bcp>
+                </observers>
+            </catalog_product_load_after>
+            <catalog_product_collection_load_after>
+                <observers>
+                    <bcp>
+                        <type>singleton</type>
+                        <class>bcp/observer</class>
+                        <method>catalogProductCollectionLoadAfter</method>
+                    </bcp>
+                </observers>
+            </catalog_product_collection_load_after>
+            <controller_front_send_response_before>
+                <observers>
+                    <bcp>
+                        <type>singleton</type>
+                        <class>bcp/observer</class>
+                        <method>httpResponseSendBefore</method>
+                    </bcp>
+                </observers>
+            </controller_front_send_response_before>
+            <core_block_abstract_prepare_layout_before>
+                <observers>
+                    <bcp>
+                        <type>singleton</type>
+                        <class>bcp/observer</class>
+                        <method>coreBlockAbstractPrepareLayoutBefore</method>
+                    </bcp>
+                </observers>
+            </core_block_abstract_prepare_layout_before>
+            <core_block_abstract_to_html_before>
+                <observers>
+                    <bcp>
+                        <type>singleton</type>
+                        <class>bcp/observer</class>
+                        <method>coreBlockAbstractToHtmlBefore</method>
+                    </bcp>
+                </observers>
+            </core_block_abstract_to_html_before>
+           
+            <checkout_cart_add_product_complete>
+                <observers>
+                    <bcp>
+                        <type>singleton</type>
+                        <class>bcp/observer</class>
+                        <method>checkoutCartAddProductComplete</method>
+                    </bcp>
+                </observers>
+            </checkout_cart_add_product_complete>
+            <controller_action_layout_load_before>
+                <observers>
+                    <bcp>
+                        <type>singleton</type>
+                        <class>bcp/observer</class>
+                        <method>controllerActionLayoutLoadBefore</method>
+                    </bcp>
+                </observers>
+            </controller_action_layout_load_before>
+        </events>
+        <layout>
+            <updates>
+                <bcp>
+                    <file>bcp.xml</file>
+                </bcp>
+            </updates>
+        </layout>
+        <translate>
+            <modules>
+                <bcp>
+                    <files>
+                        <default>DerModPro_BCP.csv</default>
+                    </files>
+                </bcp>
+            </modules>
+        </translate>
+        <routers>
+            <catalog>
+                <args>
+                    <modules>
+                        <DerModPro_BCP before="Mage_Catalog">DerModPro_BCP_Catalog</DerModPro_BCP>
+                    </modules>
+                </args>
+            </catalog>
+        </routers>
+        <product>
+            <collection>
+                <attributes>
+                    <bcp_default_override/>
+                    <bcp_default_product/>
+                    <bcp_default_product_sku/>
+                </attributes>
+            </collection>
+        </product>
+    </frontend>
+
+    <adminhtml>
+        <events>
+            <catalog_product_save_after>
+                <observers>
+                    <bcp>
+                        <type>singleton</type>
+                        <class>bcp/observer</class>
+                        <method>catalogProductSaveAfter</method>
+                    </bcp>
+                </observers>
+            </catalog_product_save_after>
+        </events>
+        <translate>
+            <modules>
+                <bcp>
+                    <files>
+                        <default>DerModPro_BCP.csv</default>
+                    </files>
+                </bcp>
+            </modules>
+        </translate>
+        <menu>
+            <system>
+                <children>
+                    <tools>
+                        <children>
+                            <bcp translate="title" module="bcp">
+                                <title>Better Configurable Products</title>
+                                <sort_order>500</sort_order>
+                                <children>
+                                    <defaultchild translate="title" module="bcp">
+                                        <title>Default Simple Product</title>
+                                        <action>adminhtml/system_tools_bcp_default</action>
+                                        <sort_order>10</sort_order>
+                                    </defaultchild>
+                                </children>
+                            </bcp>
+                        </children>
+                    </tools>
+                </children>
+            </system>
+        </menu>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <dermodpro_bcp translate="title" module="bcp">
+                                            <title>Better Configurable Products</title>
+                                        </dermodpro_bcp>
+                                    </children>
+                                </config>
+                                <tools>
+                                    <children>
+                                        <bcp translate="title" module="bcp">
+                                            <title>Better Configurable Products</title>
+                                            <sort_order>500</sort_order>
+                                            <children>
+                                                <defaultchild translate="title" module="bcp">
+                                                    <title>Default Simple Product</title>
+                                                    <sort_order>10</sort_order>
+                                                </defaultchild>
+                                            </children>
+                                        </bcp>
+                                    </children>
+                                </tools>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+    </adminhtml>
+    
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <DerModPro_BCP before="Mage_Adminhtml">DerModPro_BCP_Adminhtml</DerModPro_BCP>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+
+    <default>
+        <dermodpro_bcp>
+            <support>
+                <support_mail>dmp.support@netresearch.de</support_mail>
+            </support>    
+            <bcp>
+                <price_prefix><![CDATA[= ]]></price_prefix>
+                <price_sufix><![CDATA[]]></price_sufix>
+                <out_of_stock_sufix><![CDATA[Not in stock]]></out_of_stock_sufix>
+                <unknown_price_label><![CDATA[(please select to see price options below)]]></unknown_price_label>
+                <show_option_price>1</show_option_price>
+                <show_option_price_if_same>0</show_option_price_if_same>
+                <update_price>1</update_price>
+                <update_images>1</update_images>
+                <keep_configurable_media_gallery>0</keep_configurable_media_gallery>
+                <update_short_desc>1</update_short_desc>
+                <update_collateral>1</update_collateral>
+                <update_cpo>1</update_cpo>
+                <keep_configurable_description>0</keep_configurable_description>
+                <show_out_of_stock_products>0</show_out_of_stock_products>
+                <dropdown_out_of_stock_grey_products>0</dropdown_out_of_stock_grey_products>
+                <preload_simple_product_images>1</preload_simple_product_images>
+                <show_spinner>0</show_spinner>
+
+                <!-- keep this empty to start with -->
+                <theme_selection></theme_selection>
+
+                <use_cheapest_simple_as_default>0</use_cheapest_simple_as_default>
+
+                <!-- ===================== default theme setup ===================== -->
+                <!-- price update -->
+                <update_price_dom_xpath_default><![CDATA[//div[@class="product-essential"]//div[@class="price-box"]&&&//ul[@class="product-pricing"]]]></update_price_dom_xpath_default>
+                <update_price_dom_csspath_default><![CDATA[.product-essential .price-box&&&ul.product-pricing]]></update_price_dom_csspath_default>
+                <update_price_empty_default><![CDATA[<ul class="product-pricing" style="display: none;"><li/></ul>]]></update_price_empty_default>
+                <price_clone_default><![CDATA[.product-essential .price-box]]></price_clone_default>
+
+                <update_price_dom_xpath_default14><![CDATA[//div[@class="product-essential"]//div[@class="price-box"]&&&//ul[@class="tier-prices product-pricing"]]]></update_price_dom_xpath_default14>
+                <update_price_dom_csspath_default14><![CDATA[.product-essential .price-box&&&ul.tier-prices]]></update_price_dom_csspath_default14>
+                <update_price_empty_default14><![CDATA[<ul class="tier-prices product-pricing" style="display: none;"><li/></ul>]]></update_price_empty_default14>
+
+                <!-- images update -->
+                <update_images_dom_xpath_default><![CDATA[//div[@class="product-img-box"]]]></update_images_dom_xpath_default>
+                <update_images_dom_csspath_default><![CDATA[.product-img-box]]></update_images_dom_csspath_default>
+                <update_images_prepare_default><![CDATA[product_zoom.draggable.destroy();]]></update_images_prepare_default>
+                <update_images_callback_default><![CDATA[Event.observe($('image'), 'load', function() { product_zoom = new Product.Zoom('image', 'track', 'handle', 'zoom_in', 'zoom_out', 'track_hint');});]]></update_images_callback_default>
+
+                <!-- sample callbacks for http://www.magentocommerce.com/extension/1492/magento-jqzoom -->
+                <!--   prepare callback: jQuery('.jqzoom')=null; -->
+                <!--   init callback: jQuery('.jqzoom').jqueryzoom({ xzoom:300, yzoom:300, anim_scale:0 }); -->
+                <!-- for the Magic Zoom Plus extension: http://www.magictoolbox.com/magiczoomplus_magento/ -->
+                <!-- leave prepare callback empty -->
+                <!--   init callback: MagicZoomPlus.refresh(); -->
+
+                <!-- short description update -->
+                <update_short_desc_dom_xpath_default><![CDATA[//div[@class="short-description"]]]></update_short_desc_dom_xpath_default>
+                <update_short_desc_dom_csspath_default><![CDATA[.short-description]]></update_short_desc_dom_csspath_default>
+
+                <!-- collateral update -->
+                <update_collateral_dom_xpath_default><![CDATA[//div[@class="product-collateral"]]]></update_collateral_dom_xpath_default>
+                <update_collateral_dom_csspath_default><![CDATA[.product-collateral]]></update_collateral_dom_csspath_default>
+
+                <!-- custom product option update -->
+                <update_cpo_dom_xpath_default><![CDATA[//div[@class="bcp-cpo-simple"]]]></update_cpo_dom_xpath_default>
+                <update_cpo_dom_csspath_default><![CDATA[.bcp-cpo-simple]]></update_cpo_dom_csspath_default>
+                <update_cpo_empty_default><![CDATA[<div class="bcp-cpo-simple" style="display: none;"></div>]]></update_cpo_empty_default>
+
+                <!-- addto update -->
+                <update_addto_dom_xpath_default><![CDATA[//ul[@class="add-to-box"]]]></update_addto_dom_xpath_default>
+                <update_addto_dom_csspath_default><![CDATA[.add-to-box]]></update_addto_dom_csspath_default>
+
+                <!-- ===================== modern theme setup - diversions from the default theme ===================== -->
+                <!-- tabs update -->
+                <update_price_dom_xpath_modern><![CDATA[//div[@class="product-essential"]//div[@class="price-box"]&&&//ul[@class="product-pricing"]]]></update_price_dom_xpath_modern>
+                <update_price_dom_csspath_modern><![CDATA[.product-essential .price-box&&&ul.product-pricing]]></update_price_dom_csspath_modern>
+                <update_price_empty_modern><![CDATA[<ul class="product-pricing" style="display: none;"><li/></ul>]]></update_price_empty_modern>
+                <update_collateral_dom_xpath_modern><![CDATA[//div[@id="product_tabs_description_contents"]&&&//div[@id="product_tabs_additional_contents"]&&&//div[@id="product_tabs_tags_contents"]]]></update_collateral_dom_xpath_modern>
+                <update_collateral_dom_csspath_modern><![CDATA[#product_tabs_description_contents&&&#product_tabs_additional_contents&&&#product_tabs_tags_contents]]></update_collateral_dom_csspath_modern>
+                <update_collateral_callback_modern><![CDATA[new Varien.Tabs('.tabs')]]></update_collateral_callback_modern>
+
+                <!-- ===================== blank theme setup - diversions from the default theme  ===================== -->
+                <!-- short description update -->
+                <update_short_desc_dom_xpath_blank><![CDATA[//div[@class="short-description std"]]]></update_short_desc_dom_xpath_blank>
+                <!-- price update -->
+                <update_price_dom_xpath_blank><![CDATA[//div[@class="product-view"]//div[@class="price-box"]&&&//ul[@class="product-pricing"]]]></update_price_dom_xpath_blank>
+                <update_price_dom_csspath_blank><![CDATA[.product-view .price-box&&&ul.product-pricing]]></update_price_dom_csspath_blank>
+                <!-- needed because it differs from the 1.4 default theme -->
+                <update_price_empty_blank><![CDATA[<ul class="product-pricing" style="display: none;"><li/></ul>]]></update_price_empty_blank>
+                <price_clone_default><![CDATA[.product-view .price-box]]></price_clone_default>
+
+
+                <!-- ===================== blue theme setup - diversions from the default theme ===================== -->
+                <!-- same as default -->
+
+
+                <!-- ===================== blank_seo yoast theme setup - diversions from the default theme ===================== -->
+                <!-- same as blank -->
+                <!-- short description update -->
+                <update_short_desc_dom_xpath_blank_seo><![CDATA[//div[@class="short-description std"]]]></update_short_desc_dom_xpath_blank_seo>
+                <!-- price update -->
+                <update_price_dom_xpath_blank_seo><![CDATA[//div[@class="product-view"]//div[@class="price-box"]&&&//ul[@class="product-pricing"]]]></update_price_dom_xpath_blank_seo>
+                <update_price_dom_csspath_blank_seo><![CDATA[.product-view .price-box&&&ul.product-pricing]]></update_price_dom_csspath_blank_seo>
+                <!-- needed because it differs from the 1.4 default theme -->
+                <update_price_empty_blank_seo><![CDATA[<ul class="product-pricing" style="display: none;"><li/></ul>]]></update_price_empty_blank_seo>
+                <price_clone_default><![CDATA[.product-view .price-box]]></price_clone_default>
+            </bcp>
+            <bcp_advanced>
+                <!-- Advanced update selector specfications for manual entry in adminhtml config -->
+                <update_images_dom_xpath_advanced></update_images_dom_xpath_advanced>
+                <update_images_dom_csspath_advanced></update_images_dom_csspath_advanced>
+                <update_images_prepare_advanced></update_images_prepare_advanced>
+                <update_images_callback_advanced></update_images_callback_advanced>
+
+                <update_short_desc_dom_xpath_advanced></update_short_desc_dom_xpath_advanced>
+                <update_short_desc_dom_csspath_advanced></update_short_desc_dom_csspath_advanced>
+
+                <update_collateral_dom_xpath_advanced></update_collateral_dom_xpath_advanced>
+                <update_collateral_dom_csspath_advanced></update_collateral_dom_csspath_advanced>
+
+                <update_addto_dom_xpath_advanced></update_addto_dom_xpath_advanced>
+                <update_addto_dom_csspath_advanced></update_addto_dom_csspath_advanced>
+
+                <ajax_response_cache_time>300</ajax_response_cache_time>
+                <html_page_cache_time>0</html_page_cache_time>
+            </bcp_advanced>
+        </dermodpro_bcp>
+    </default>
+    <phpunit>
+        <suite>
+            <modules>
+                <DerModPro_BCP/>
+            </modules>
+        </suite>
+    </phpunit>
+</config>
