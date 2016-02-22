@@ -110,6 +110,7 @@
                 <images/>
                 <short_desc/>
                 <collateral/>
+                <pdescription/>
                 <cpo/>
             </update_selector_list>
             <price_selector_list>
@@ -391,12 +392,53 @@
                 <update_price_dom_csspath_default14><![CDATA[.product-essential .price-box&&&ul.tier-prices]]></update_price_dom_csspath_default14>
                 <update_price_empty_default14><![CDATA[<ul class="tier-prices product-pricing" style="display: none;"><li/></ul>]]></update_price_empty_default14>
 
+                <update_pdescription>1</update_pdescription>
+                <update_pdescription_dom_xpath_default>
+                    <![CDATA[//*[@id="description-std"]]]>
+                </update_pdescription_dom_xpath_default>
+                <update_pdescription_dom_csspath_default>
+                    <![CDATA[div#description-std]]>
+                </update_pdescription_dom_csspath_default>
+
+
+
                 <!-- images update -->
+                <update_images_dom_xpath_default><![CDATA[//div[@id="pi-box"]]]></update_images_dom_xpath_default>
+                <update_images_dom_csspath_default><![CDATA[#pi-box]]></update_images_dom_csspath_default>
+
+                <!--
+                 <update_images_prepare_default><![CDATA[product_zoom.draggable.destroy();]]></update_images_prepare_default>
+                 <update_images_callback_default><![CDATA[Event.observe($('image'), 'load', function() { product_zoom = new Product.Zoom('image', 'track', 'handle', 'zoom_in', 'zoom_out', 'track_hint');});]]></update_images_callback_default>
+ -->
+
+                <update_images_prepare_default><![CDATA[jQuery('.cloud-zoom').data('zoom').destroy();]]></update_images_prepare_default>
+                <update_images_callback_default><![CDATA[
+                jQuery(function($) {
+    var image_es;
+    var zoom_timer;
+
+    jQuery('.product-image .cloud-zoom').CloudZoom();
+
+    function resize_cloudzoom() {
+        jQuery('.product-image .cloud-zoom').CloudZoom();
+                if (zoom_timer) clearTimeout(zoom_timer);
+    }
+    $(window).load(resize_cloudzoom);
+    $(window).resize(function() {
+        clearTimeout(zoom_timer);
+        zoom_timer = setTimeout(resize_cloudzoom, 200);
+    });
+});
+                ]]></update_images_callback_default>
+
+
+
+                <!-- images update
                 <update_images_dom_xpath_default><![CDATA[//div[@class="product-img-box"]]]></update_images_dom_xpath_default>
                 <update_images_dom_csspath_default><![CDATA[.product-img-box]]></update_images_dom_csspath_default>
                 <update_images_prepare_default><![CDATA[product_zoom.draggable.destroy();]]></update_images_prepare_default>
                 <update_images_callback_default><![CDATA[Event.observe($('image'), 'load', function() { product_zoom = new Product.Zoom('image', 'track', 'handle', 'zoom_in', 'zoom_out', 'track_hint');});]]></update_images_callback_default>
-
+-->
                 <!-- sample callbacks for http://www.magentocommerce.com/extension/1492/magento-jqzoom -->
                 <!--   prepare callback: jQuery('.jqzoom')=null; -->
                 <!--   init callback: jQuery('.jqzoom').jqueryzoom({ xzoom:300, yzoom:300, anim_scale:0 }); -->
@@ -405,8 +447,8 @@
                 <!--   init callback: MagicZoomPlus.refresh(); -->
 
                 <!-- short description update -->
-                <update_short_desc_dom_xpath_default><![CDATA[//div[@class="short-description"]]]></update_short_desc_dom_xpath_default>
-                <update_short_desc_dom_csspath_default><![CDATA[.short-description]]></update_short_desc_dom_csspath_default>
+                <update_short_desc_dom_xpath_default><![CDATA[//div[@id="short-description"]]]></update_short_desc_dom_xpath_default>
+                <update_short_desc_dom_csspath_default><![CDATA[#short-description]]></update_short_desc_dom_csspath_default>
 
                 <!-- collateral update -->
                 <update_collateral_dom_xpath_default><![CDATA[//div[@class="product-collateral"]]]></update_collateral_dom_xpath_default>
