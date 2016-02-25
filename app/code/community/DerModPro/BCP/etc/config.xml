@@ -109,6 +109,10 @@
                 <price/>
                 <images/>
                 <short_desc/>
+                <beschreibung/>
+                <sku/>
+                <delivierytime/>
+                <vkpreis/>
                 <collateral/>
                 <cpo/>
             </update_selector_list>
@@ -361,6 +365,32 @@
                 <price_sufix><![CDATA[]]></price_sufix>
                 <out_of_stock_sufix><![CDATA[Not in stock]]></out_of_stock_sufix>
                 <unknown_price_label><![CDATA[(please select to see price options below)]]></unknown_price_label>
+
+                <update_sku>1</update_sku>
+                <update_sku_dom_xpath_default>
+                    <![CDATA[//*[@id="skuno"]]]>
+                </update_sku_dom_xpath_default>
+                <update_sku_dom_csspath_default>
+                    <![CDATA[span#skuno.value]]>
+                </update_sku_dom_csspath_default>
+
+
+                <update_delivierytime>1</update_delivierytime>
+                <update_delivierytime_dom_xpath_default>
+                    <![CDATA[//*[@id="dtime"]]]>
+                </update_delivierytime_dom_xpath_default>
+                <update_delivierytime_dom_csspath_default>
+                    <![CDATA[span#dtime.value]]>
+                </update_delivierytime_dom_csspath_default>
+
+                <update_vkpreis>1</update_vkpreis>
+                <update_vkpreis_dom_xpath_default>
+                    <![CDATA[//*[@id="vkpreisvalue"]]]>
+                </update_vkpreis_dom_xpath_default>
+                <update_vkpreis_dom_csspath_default>
+                    <![CDATA[span#vkpreisvalue.vkpreisvalue]]>
+                </update_vkpreis_dom_csspath_default>
+
                 <show_option_price>1</show_option_price>
                 <show_option_price_if_same>0</show_option_price_if_same>
                 <update_price>1</update_price>
