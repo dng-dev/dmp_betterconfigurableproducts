@@ -191,7 +191,7 @@ BCP.Config = Class.create(Product.Config, {
     },
     ajaxFailure: function() {
         this.hideSpinner();
-        alert('Error fetching product update!');
+        console.log('dmp/bcp Error fetching product update!');
     },
     ajaxSuccess: function(transport) {
         this.hideSpinner();
